@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color:#fcb045;
+}
+
+.main-content{
+    
+    min-height: 100vh;
+    width: 80%;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.main-title{
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f7f7f7ec;
+    padding-top: 48px;
+}
+
+/*SECTIUNEA STANGA A CV*/
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #2D9CDB;
+}
+
+.left-content{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.profile{
+    width: 100%;
+    border-bottom: 1px solid #002333;
+}
+
+.image{
+    width: 100%;
+    text-align: center;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #002333;
+    
+}
+
+.name{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+
+.career{
+    font-size: 19.2px;
+    color: #94D9EA;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 16px;
+}
+.contact-info ul{
+    padding-top: 32px;
+}
+
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #718096;
+}
+.contact-info ul li i{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: #2D9CDB;
+}
+
+
+
+/*SECTIUNEA DREAPTA A CV*/
+.right-section{
+    padding-left: 20px;
+    grid-column: span 5;
+    background-color: #f7f7f7;
+    height: 1010px;
+    
+}
+.right-main-content{
+    padding: 32px 48px;
+    float:left;
+}
+
+
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2F80ED;
+    margin-bottom: 1.2rem;
+    position: left;
+    margin-top: 48px;
+}
+
+.right-title::after{
+    content: "";
+    position: left;
+    width: 60%;
+    height: .2rem;
+    background-color: #ccc;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+table, th, td {
+    border:1px solid black;
+  }
