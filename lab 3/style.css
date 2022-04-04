@@ -1,0 +1,55 @@
+#boxaFlag {
+  padding: 40px;
+
+  background-color:red;
+  text-align: center;
+  border-color: black;
+  font-weight: bold;
+  font-size: 50px;
+  width: 1407px;
+}
+
+.colone label {
+    display: block;
+}
+
+.imag1,
+.imag2,
+.imag3 {
+  background-color: gray;
+  height: 235px;
+  width: 480px;
+}
+
+.colone {
+  text-align: center;
+  height: 200px;
+  width: 491px;
+  float: left;
+  display: block;
+}
+
+#imgThird,
+#imgTwo,
+#imgFirst{
+  height: 235px;
+  width: 482px;
+}
+
+#colone1,
+#colone2,
+#colone3 {
+    border: 5px solid transparent;
+}
+
+.ads {
+  display: flex;
+  flex-direction: row;
+}
+
+#reset1 {
+  left: 49%;
+  top: 720px;
+
+  position: absolute;
+}
