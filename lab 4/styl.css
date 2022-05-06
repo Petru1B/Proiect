@@ -1,0 +1,451 @@
+.container {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.container div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.info {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 15px;
+    width: 600px;
+    background: yellow;
+    border-radius: 50px;
+}
+
+.buton {
+    margin-left: 100px;
+}
+
+#collect-button {
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 0px;
+    background: purple;
+    color: red;
+    border-radius: 10px;
+}
+.button {
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.gg-profile,
+.gg-profile::after,
+.gg-profile::before {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid;
+ border-radius: 100px
+}
+
+.gg-profile {
+ overflow: hidden;
+ transform: scale(var(--ggs,1));
+ width: 22px;
+ height: 22px;
+ position: relative
+}
+
+.gg-profile::after,
+.gg-profile::before {
+ content: "";
+ position: absolute;
+ top: 2px;
+ left: 5px;
+ width: 8px;
+ height: 8px
+}
+
+.gg-profile::after {
+ border-radius: 200px;
+ top: 11px;
+ left: 0px;
+ width: 18px;
+ height: 18px
+} 
+.gg-mail,
+.gg-mail::after {
+ display: block;
+ box-sizing: border-box;
+ height: 14px;
+ border: 2px solid
+}
+
+.gg-mail {
+ overflow: hidden;
+ transform: scale(var(--ggs,1));
+ position: relative;
+ width: 18px;
+ border-radius: 2px
+}
+
+.gg-mail::after {
+ content: "";
+ position: absolute;
+ border-radius: 3px;
+ width: 14px;
+ transform: rotate(-45deg);
+ bottom: 3px;
+ left: 0
+} 
+.gg-work-alt,
+.gg-work-alt::after {
+ display: block;
+ box-sizing: border-box;
+ box-shadow: 0 0 0 2px
+}
+
+.gg-work-alt {
+ position: relative;
+ transform: scale(var(--ggs,1));
+ width: 14px;
+ height: 10px;
+ border-radius: 1px
+}
+
+.gg-work-alt::after {
+ content: "";
+ position: absolute;
+ width: 6px;
+ height: 1px;
+ border-top-left-radius: 1px;
+ border-top-right-radius: 1px;
+ left: 4px;
+ top: -3px
+} 
+.gg-phone {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs,1))
+   }
+   
+   .gg-phone::after,
+   .gg-phone::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-phone::after {
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    left: 2px;
+    bottom: 2px;
+    background:
+    linear-gradient(
+    to left,
+    currentColor 10px,
+    transparent 0
+    ) no-repeat right 11px/6px 4px,
+    linear-gradient(
+    to left,
+    currentColor 10px,
+    transparent 0
+    ) no-repeat -1px 0/4px 6px
+   }
+   
+   .gg-phone::before {
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: 2px;
+    left: 2px
+   } 
+   .gg-home {
+    background:
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat 0 bottom/4px 2px,
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat right bottom/4px 2px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 18px;
+    height: 14px;
+    border: 2px solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: -2px
+    }
+   
+    .gg-home::after,
+    .gg-home::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+    }
+   
+    .gg-home::before {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 4px;
+    transform: rotate(45deg);
+    top: -5px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    left: 0
+    }
+   
+    .gg-home::after {
+    width: 8px;
+    height: 10px;
+    border: 2px solid;
+    border-radius: 100px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    left: 3px;
+    bottom: 0
+    } 
+    .gg-facebook {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 20px;
+        height: 20px
+       }
+       
+       .gg-facebook::after,
+       .gg-facebook::before {
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box
+       }
+       
+       .gg-facebook::before {
+        width: 8px;
+        height: 20px;
+        border-left: 4px solid;
+        border-top: 4px solid;
+        border-top-left-radius: 5px;
+        left: 6px
+       }
+       
+       .gg-facebook::after {
+        width: 10px;
+        height: 4px;
+        background: currentColor;
+        top: 7px;
+        left: 4px;
+        transform: skew(-5deg)
+       } 
+       .gg-instagram {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        border: 2px solid transparent;
+        box-shadow: 0 0 0 2px;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px
+       }
+       
+       .gg-instagram::after,
+       .gg-instagram::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute
+       }
+       
+       .gg-instagram::after {
+        border: 2px solid;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        top: 3px
+       }
+       
+       .gg-instagram::before {
+        border-radius: 3px;
+        width: 2px;
+        height: 2px;
+        background: currentColor;
+        right: 1px;
+        top: 1px
+       } 
+       .gg-globe-alt,
+       .gg-globe-alt::after,
+       .gg-globe-alt::before {
+        display: block;
+        box-sizing: border-box;
+        height: 18px;
+        border: 2px solid
+       }
+       
+       .gg-globe-alt {
+        position: relative;
+        transform: scale(var(--ggs,1));
+        width: 18px;
+        border-radius: 22px
+       }
+       
+       .gg-globe-alt::after,
+       .gg-globe-alt::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        border-radius: 100%;
+        top: -2px;
+        left: 3px
+       }
+       
+       .gg-globe-alt::after {
+        width: 24px;
+        height: 20px;
+        border: 2px solid transparent;
+        border-bottom: 2px solid;
+        top: -11px;
+        left: -5px
+       } 
+       .gg-calendar-dates {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 18px;
+        height: 18px;
+        border: 2px solid;
+        border-radius: 3px
+       }
+       
+       .gg-calendar-dates::after,
+       .gg-calendar-dates::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 3px;
+        height: 2px;
+        left: 2px
+       }
+       
+       .gg-calendar-dates::before {
+        background: currentColor;
+        width: 2px;
+        box-shadow:
+        4px 0 0,8px 0 0,0 4px 0,
+        4px 4px 0,8px 4px 0;
+        top: 6px
+       }
+       
+       .gg-calendar-dates::after {
+        width: 10px;
+        top: -4px;
+        box-shadow: 0 6px 0 0
+       } 
+       .gg-sand-clock {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 12px;
+        height: 20px;
+        border-top: 2px solid;
+        border-bottom: 2px solid
+       }
+       
+       .gg-sand-clock::after,
+       .gg-sand-clock::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute
+       }
+       
+       .gg-sand-clock::before {
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        bottom: -2px;
+        width: 10px;
+        height: 10px;
+        border: 2px solid;
+        left: 1px
+       }
+       
+       .gg-sand-clock::after {
+        width: 6px;
+        height: 6px;
+        border: 2px solid transparent;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        top: 0;
+        left: 3px;
+        box-shadow:
+        0 0 0 2px,
+        inset 2px 0 0
+       } 
+       .gg-list {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 22px;
+        height: 20px;
+        border: 2px solid;
+        border-radius: 3px
+       }
+       
+       .gg-list::after,
+       .gg-list::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: currentColor;
+        top: 3px;
+        left: 3px;
+        box-shadow:
+        0 4px 0,
+        0 8px 0
+       }
+       
+       .gg-list::after {
+        border-radius: 3px;
+        width: 8px;
+        left: 7px
+       } 
