@@ -1,0 +1,325 @@
+body {
+	display :flex;
+	justify-content: center;
+	background-image: url("back.jpg")
+}
+
+.container {
+	width: auto;
+	height: auto;
+	background-color: white;
+	border: 3px solid  rgb(0, 166, 255);
+	border-radius: 20px;
+	box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+
+.container h1 {
+	text-align: center;
+	color: aquamarine;
+}
+
+label {
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input:hover {
+	border-color: rgb(0, 166, 255);
+}
+
+input{
+	margin-left: 10px;
+}
+
+.invalid{
+	border-color: #F90A0A;
+   }
+
+   .valid{
+	border-color: lime;
+   }
+
+#plus {
+	width: 50px;
+	height: 50px;
+	float:left;
+	margin-left: 20px;
+	background-color: rgb(116, 203, 253);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 50px;
+}
+
+.gg-add-r {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 22px;
+	height: 22px;
+	border: 2px solid;
+	transform: scale(var(--ggs,1));
+	border-radius: 4px
+   }
+   
+   .gg-add-r::after,
+   .gg-add-r::before {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background: currentColor;
+	border-radius: 5px;
+	top: 8px;
+	left: 4px
+   }
+   
+   .gg-add-r::after {
+	width: 2px;
+	height: 10px;
+	top: 4px;
+	left: 8px
+   } 
+
+  
+
+   .gg-add {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 22px;
+	height: 22px;
+	border: 2px solid;
+	transform: scale(var(--ggs,1));
+	border-radius: 22px
+   }
+   
+   .gg-add::after,
+   .gg-add::before {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background: currentColor;
+	border-radius: 5px;
+	top: 8px;
+	left: 4px
+   }
+   
+   .gg-add::after {
+	width: 2px;
+	height: 10px;
+	top: 4px;
+	left: 8px
+   } 
+
+  
+.gg-calendar-dates {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs,1));
+	width: 18px;
+	height: 18px;
+	border: 2px solid;
+	border-radius: 3px
+   }
+   
+   .gg-calendar-dates::after,
+   .gg-calendar-dates::before {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	border-radius: 3px;
+	height: 2px;
+	left: 2px
+   }
+   
+   .gg-calendar-dates::before {
+	background: currentColor;
+	width: 2px;
+	box-shadow:
+	4px 0 0,8px 0 0,0 4px 0,
+	4px 4px 0,8px 4px 0;
+	top: 6px
+   }
+   
+   .gg-calendar-dates::after {
+	width: 10px;
+	top: -4px;
+	box-shadow: 0 6px 0 0
+   } 
+
+   .gg-facebook {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs,1));
+	width: 20px;
+	height: 20px
+   }
+   
+   .gg-facebook::after,
+   .gg-facebook::before {
+	content: "";
+	display: block;
+	position: absolute;
+	box-sizing: border-box
+   }
+   
+   .gg-facebook::before {
+	width: 8px;
+	height: 20px;
+	border-left: 4px solid;
+	border-top: 4px solid;
+	border-top-left-radius: 5px;
+	left: 6px
+   }
+   
+   .gg-facebook::after {
+	width: 10px;
+	height: 4px;
+	background: currentColor;
+	top: 7px;
+	left: 4px;
+	transform: skew(-5deg)
+   } 
+   .gg-instagram {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs,1));
+	border: 2px solid transparent;
+	box-shadow: 0 0 0 2px;
+	border-radius: 4px;
+	width: 20px;
+	height: 20px
+   }
+   
+   .gg-instagram::after,
+   .gg-instagram::before {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute
+   }
+   
+   .gg-instagram::after {
+	border: 2px solid;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	top: 3px
+   }
+   
+   .gg-instagram::before {
+	border-radius: 3px;
+	width: 2px;
+	height: 2px;
+	background: currentColor;
+	right: 1px;
+	top: 1px
+   } 
+   .container h1
+   {
+	   text-align: center;
+	   margin: 0 0 10px;
+	   padding: 0;
+	   color: rgb(66,133,244);
+	   letter-spacing: 2px;
+   }
+
+    .gg-user-add {
+ display: block;
+ transform: scale(var(--ggs,1));
+ box-sizing: border-box;
+ width: 20px;
+ height: 18px;
+ background:
+ linear-gradient(
+ to left,
+ currentColor 8px,
+ transparent 0)
+ no-repeat 14px 6px/6px 2px,
+ linear-gradient(
+ to left,
+ currentColor 8px,
+ transparent 0)
+ no-repeat 16px 4px/2px 6px
+}
+
+.gg-user-add::after,.gg-user-add::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ border: 2px solid
+}
+
+.gg-user-add::before {
+ width: 8px;
+ height: 8px;
+ border-radius: 30px;
+ top: 0;
+ left: 2px
+}
+
+.gg-user-add::after {
+ width: 12px;
+ height: 9px;
+ border-bottom: 0;
+ border-top-left-radius: 3px;
+ border-top-right-radius: 3px;
+ top: 9px
+} 
+.gg-user-add {
+    display: block;
+    transform: scale(var(--ggs,1));
+    box-sizing: border-box;
+    width: 20px;
+    height: 18px;
+    background:
+        linear-gradient(
+            to left,
+            currentColor 8px,
+            transparent 0)
+            no-repeat 14px 6px/6px 2px,
+        linear-gradient(
+            to left,
+            currentColor 8px,
+            transparent 0)
+            no-repeat 16px 4px/2px 6px
+}
+.gg-user-add::after,.gg-user-add::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid
+}
+.gg-user-add::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+    top: 0;
+    left: 2px
+}
+.gg-user-add::after {
+    width: 12px;
+    height: 9px;
+    border-bottom: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    top: 9px
+}
+   
+  
+  
