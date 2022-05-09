@@ -46,6 +46,7 @@ response.articles_7.forEach(title => {
 });
 
 
+
       console.log(response.articles);
 container. append(`
       <center>
@@ -63,8 +64,13 @@ container. append(`
         <h1>Retele de socializare<i class="gg-globe-alt"></i></h1>
       <p><a href="${response.Link}" target="_blank"><i class="gg-facebook"></i>Facebook</a></p>
       <p><a href="${response.Link1}" target="_blank"><i class="gg-instagram"></i>Instagram</a></p>
-      <p><a href="${response.Link2}" target="_blank"><i class="gg-globe-alt"></i>Link suplimentar</a></p>
+      <p><a href="${response.Link2}" target="_blank"><i class="fa fa-snapchat"></i>Snapchat</a></p>
+      <p><a href="${response.Link3}" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></p>
+      <p><a href="${response.Link4}" target="_blank"><i class="gg-youtube"></i>Youtube</a></p>
+      <p><a href="${response.Link5}" target="_blank"><i class="fa fa-vk""></i>Vk</a></p>
+
       </div>
+      
       <hr>
       <div class="info">
         <h1>Datele despre Job<i class="gg-toolbox"></i></h1>
@@ -81,15 +87,21 @@ container. append(`
           <div class="info">
         <h1>Studii<i class="gg-list"></i></i></h1>
         <p>End data: ${final_6}</p>
-          <p>Titlul Educațional:: ${final_5}</p>
-          <p>Titlul Educațional: ${final_7}</p>
+          <p>Titlul Educational:: ${final_5}</p>
+          <p>Titlul Educational: ${final_7}</p>
           </div>
        </center>
        `);
       },
     });
   }
-
+  ajaxGetRequest();
 $('#collect-button').on('click', () => {
-  ajaxGetRequest()
+   navigate();
 });
+
+function navigate() {
+  timer = setTimeout(() => {
+      window.location.href = 'Untitled-1.html';
+  }, 1); 
+}
