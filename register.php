@@ -108,40 +108,52 @@
 									<label >In prezent:</label> 
 									<input type="checkbox" class="check" id="dn" >
 							  </div>
+							  <br>
 								  <div>
 									<input type="date" class="sd stdt" name="startdatajob"  >
 									<span class="error_form sd_error_message"></span>
 									<label>
-									  
 									   Start Data
 									</label>	
 								  </div>
+								  <br>
 								  <div class="sfar">
-								   
 									<input type="date" class="end ed" name="enddatajob"  >
 									<span class="error_form end_error_message"></span>
 									<label>
 									   End Data
 									</label>	
 								</div>
-					   
+								<br>
 								  <div>
 									<input type="text" class="city form_city" name="cityJob">
 									<span class="error_form city_error_message"></span>
 									<label class="ctyjob">Orasul</label>	
 								  </div>
-								 
-							 
+								  <br>
 								  <div >
 									<input type="text" class="inst form_int1" name="denPoz">
 									<span class="error_form int1_error_message"></span>
-									<label class="edtitle">Denumirea poziției</label>
+									<label class="edtitle">Denumirea poziției ocupate precedent</label>
 									</div>
+									<br>
 									<div>
-									<input class="companyname"  name="compName">
+								<select class="companyname"  name="compName">
+									<option value="JSC Alimentarmash">JSC Alimentarmash</option>
+									<option value="Beekeepers">Beekeepers</option>
+									<option value="Zilant S.A">Zilant S.A</option>
+									<option value="Cuptorul Fermecat SRL">Cuptorul Fermecat SRL</option>
+									<option value="NiC OL SRL">NiC OL SRL</option>
+									<option value="Balkan Pharmaceuticals">Balkan Pharmaceuticals</option>
+									<option value="Sc Dominus Deus SRL">Sc Dominus Deus SRL</option>
+									<option value="Erlan Ltd.">Erlan Ltd.</option>
+									<option value="Abbe Virgil Media">Abbe Virgil Media</option>
+									<option value="Algora">Algora</option>
+								</select>
 									<span class="error_form comp_error_message"></span>
 									<label class="edtit">Denumirea companiei</label>
 									</div>
+									<br>
 									<div class="myhide">
 									<select class="citySelect" name="cityComp">
 									<option  value="Chișinău">Chișinău</option>
@@ -152,9 +164,9 @@
 									<option  value="Nisporeni">Nisporeni</option>
 									<option  value="Soroca">Soroca</option>
 									</select>
-
+									<label class="tipus" >Orașul de origine al companiei</label>
 					</div>
-        
+					</div>
          <hr>
  
 <div>
@@ -170,12 +182,18 @@
 		   End Data
 		</label>	
 	</div>
+	<br>
 	   <div>
 	   <input type="text" class="institutia form_int" name="titedu" >
 	<span class="error_form int_error_message"></span>
 	<label class="titlu">Titlul educațional</label>	
-	<div>
+</div>
+
+	<br>
+	<div >
+	
 	<select class="educationSelect"  id="tip" name="tipstud">
+
 	<option  value="Lower secondary education">Lower secondary education</option>
 	<option  value="Post-secondary non-tertiary education">Post-secondary non-tertiary education</option>
 	<option  value="Bachelor's or equivalent">Bachelor's or equivalent</option>
@@ -183,20 +201,19 @@
 	<option  value="Primary education">Primary education</option>
 	<option  value="Upper secondary education">Upper secondary education</option>
 	<option  value="Short-cycle tertiary education">Short-cycle tertiary education</option>
-
     </select>
-	</div>
-	</div>
-	</div>
-         
-       
-              
+	<label class="tipus" >Tipul de studii</label>
 </div>
+
+	</div>
+	</div>
+	</div> 
+
                   <hr>
              <center>
 				
-			<input type="submit" class="submit" value="submit" >
-			<input type="button" class="out" value="Output" >
+			<input type="submit" class="submit" id="out" value="submit" >
+			
       </center>
 	
 		</form>

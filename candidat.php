@@ -15,7 +15,7 @@
   <div class="container">
  
   <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-    <a class="navbar-brand border-1" href="output.php"><i class="gg-arrow-left"></i> Intoarcere</a>
+    <a class="navbar-brand border-1" href="index.php"><i class="gg-arrow-left"></i> Intoarcere</a>
 </nav>
  
 <div>
@@ -63,6 +63,16 @@ if(isset($_GET['id']))
                            <input type="text" value="<?= $row['job']; ?>" class="form-control" disabled>
                        </div>
                        <hr>
+                       <h1>Rețele de socializare</h1>
+                       <div class="form-group mb-3">
+                       <label for="">Facebook </label>
+                           <input type="text" value="<?= $row['facebook']; ?>" class="form-control" disabled>
+                           </div>
+                           <div class="form-group mb-3">
+                       <label for="">Instagram </label>
+                           <input type="text" value="<?= $row['instagram']; ?>" class="form-control" disabled>
+                           </div>
+                       <hr>
                        <h1>Job</h1>
                        <div class="form-group mb-3">
                          <label for="">Start Data </label>
@@ -73,19 +83,19 @@ if(isset($_GET['id']))
                            <input type="text" value="<?= $row['enddatajob']; ?>" class="form-control" disabled>
                        </div>
                        <div class="form-group mb-3">
-                         <label for="">Orasul </label>
+                         <label for="">Orasul</label>
                            <input type="text" value="<?= $row['cityJob']; ?>" class="form-control" disabled>
                        </div>
                        <div class="form-group mb-3">
-                         <label for="">Denumirea Poziției </label>
+                         <label for="">Denumirea poziției ocupate precedent </label>
                            <input type="text" value="<?= $row['denPoz']; ?>" class="form-control" disabled>
                        </div>
                        <div class="form-group mb-3">
-                         <label for="">Orasul</label>
+                         <label for="">Orașul de origine al companiei</label>
                            <input type="text" value="<?= $row['cityComp']; ?>" class="form-control" disabled>
                        </div>
                        <div class="form-group mb-3">
-                         <label for="">Companie</label>
+                         <label for="">Denumirea companiei</label>
                            <input type="text" value="<?= $row['cityComp']; ?>" class="form-control" disabled>
                        </div>
                        <hr>

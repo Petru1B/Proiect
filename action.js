@@ -3,7 +3,7 @@
 
 $(".int1_error_message").hide();
 $(".city_error_message").hide();
-$(".comp_error_message").hide();
+
 
 
 $(".form_int1").focusout(function() {
@@ -18,9 +18,7 @@ $(".sd").focusout(function(){
 $(".end").focusout(function(){
    check_Enddate_job();
 });
-$(".companyname").focusout(function(){
-   check_den();
-});
+
 
 function check_Startdate_job() {
             
@@ -71,24 +69,6 @@ if(int1_length > 3 && int1_length < 15) {
 }
 }
 
-function check_den() {
-   var int1_length = $(".companyname").val().length;
-   if(int1_length > 3 && int1_length < 15) {
-      $(".comp_error_message").hide();
-       $(".companyname").removeClass('invalid');
-       $(".companyname").addClass('valid');
-       $(".edtit").show();
-       return true;
-   }else {
-      $(".comp_error_message").html("Campul data este necesar de indeplinit");
-      $(".comp_error_message").show();
-      $(".companyname").addClass('invalid');
-      $(".edtit").hide();
-      return false;
-    
-   }
-
-}
 
 function check_cityjob() {
 var int1_length = $(".form_city").val().length;
@@ -409,7 +389,9 @@ if(int1_length > 3 && int1_length < 15) {
 
            
               if (error_fname === true && error_lname === true && error_email === true && error_adress === true && error_number === true && error_job === true  ) {
-             
+               $("#out").click(function() {
+                  navigate()
+                  });
                  return true;
               } else {
                alert("Forma nu este validata");
@@ -422,10 +404,8 @@ if(int1_length > 3 && int1_length < 15) {
 
       function navigate() {
          timer = setTimeout(() => {
-             window.location.href = 'output.php';
+             window.location.href = 'index.php';
          }, 1); 
      }
  
-     $(".out").click(function() {
-      navigate()
-      });
+    

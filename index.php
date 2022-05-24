@@ -17,7 +17,7 @@
   <form action="" method="GET">
   <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-    <a class="navbar-brand border-1" href="index.php"><i class="gg-arrow-left"></i> Intoarcere</a>
+    <a class="navbar-brand border-1" href="register.php"><i class="gg-arrow-left"></i> Intoarcere</a>
     </div>
   <div class="container">
 		  <?php
