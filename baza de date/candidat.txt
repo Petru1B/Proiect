@@ -1,0 +1,21 @@
+CREATE TABLE `candidat` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `fname` varchar(20) NOT NULL,
+ `lname` varchar(20) NOT NULL,
+ `email` varchar(20) NOT NULL,
+ `adress` varchar(20) NOT NULL,
+ `job` varchar(20) NOT NULL,
+ `number` varchar(20) NOT NULL,
+ `instagram` varchar(20) NOT NULL,
+ `facebook` varchar(20) NOT NULL,
+ `startdatajob` varchar(20) NOT NULL,
+ `enddatajob` varchar(20) NOT NULL,
+ `cityJob` varchar(20) NOT NULL,
+ `denPoz` varchar(20) NOT NULL,
+ `cityComp` varchar(20) NOT NULL,
+ `compName` varchar(20) NOT NULL,
+ `enddatastud` varchar(20) NOT NULL,
+ `titedu` varchar(20) NOT NULL,
+ `tipstud` varchar(20) NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4

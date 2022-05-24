@@ -1,0 +1,10 @@
+CREATE TABLE `products` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) NOT NULL,
+ `price` float DEFAULT NULL,
+ `producer` varchar(255) DEFAULT NULL,
+ `description` longtext DEFAULT NULL,
+ `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+ `delivered_by` longtext DEFAULT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4
